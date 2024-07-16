@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0`">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="mod">
+        <button id="mo" onclick="mode()">Mode</button>
+    </div>
+    <div id="main">
+        <div class="head">
+            <h1>Calculator</h1>
+        </div>
+        <input type="text" id="display">
+        <div class="btn">
+            <button onclick="clr()" class="bt" id="clr">C</button>
+            <div class="btnrow">
+                <button onclick="display('7')" class="bt">7</button>
+                <button onclick="display('8')" class="bt">8</button>
+                <button onclick="display('9')" class="bt">9</button>
+                <button onclick="display('/')" class="bt">/</button>
+            </div>
+            <div class="btnrow">
+                <button onclick="display('4')" class="bt">4</button> 
+                <button onclick="display('5')" class="bt">5</button>
+                <button onclick="display('6')" class="bt">6</button>
+                <button onclick="display('*')" class="bt">*</button>
+            </div>
+            <div class="btnrow">
+                <button onclick="display('1')" class="bt">1</button>
+                <button onclick="display('2')" class="bt">2</button>
+                <button onclick="display('3')" class="bt">3</button>
+                <button onclick="display('-')" class="bt">-</button>
+            </div>
+            
+            <div class="btnrow">
+                <button onclick="display('.')" class="bt">.</button>
+                <button onclick="display('0')" class="bt">0</button>
+                <button onclick="display('+')" class="bt">+</button>
+                <button onclick="cal()" class="bt">=</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./app.js"></script>
+
+</html>
